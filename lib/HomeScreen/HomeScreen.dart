@@ -11,11 +11,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
-  final List<Widget> _pages = [
-    Favorite(),
-    Home(),
-    Profile()
-  ];
+  final List<Widget> _pages = [Favorite(), Home(), Profile()];
 
   void onTabTapped(int index) {
     setState(() {
@@ -24,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   int num = 0;
+
   @override
   Widget build(BuildContext context) {
     ScreenUtil.init(width: 1125, height: 2436, allowFontScaling: false);
@@ -34,9 +31,11 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
         elevation: 0,
         backgroundColor: Colors.white,
-        onTap: onTabTapped, // new
+        onTap: onTabTapped,
+        // new
         currentIndex: _currentIndex,
-        selectedItemColor: Colors.black,// new
+        selectedItemColor: Colors.black,
+        // new
         items: [
           new BottomNavigationBarItem(
             icon: Icon(Icons.favorite_border),
@@ -46,13 +45,9 @@ class _HomeScreenState extends State<HomeScreen> {
             icon: Icon(Icons.home),
             title: Text(''),
           ),
-          new BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              title: Text('')
-          )
+          new BottomNavigationBarItem(icon: Icon(Icons.person), title: Text(''))
         ],
       ),
     );
   }
 }
-

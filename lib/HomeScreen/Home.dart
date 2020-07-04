@@ -5,7 +5,6 @@ import 'package:shopping/HomeScreen/CustomIcons.dart';
 import 'package:shopping/Model/ProductCard.dart';
 import 'package:shopping/Model/Products.dart';
 
-
 class Home extends StatelessWidget {
   const Home({
     Key key,
@@ -73,8 +72,7 @@ class Home extends StatelessWidget {
                   Align(
                     alignment: Alignment.bottomCenter,
                     child: Padding(
-                      padding:
-                      EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                      padding: EdgeInsets.only(left: 10, right: 10, bottom: 10),
                       child: Container(
                         width: double.infinity,
                         height: 100,

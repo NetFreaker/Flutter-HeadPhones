@@ -4,22 +4,23 @@ import 'package:shopping/HomeScreen/Const.dart';
 
 class BrandSelector extends StatefulWidget {
   final List<String> brands;
+
   BrandSelector({@required this.brands});
+
   @override
   _BrandSelectorState createState() => _BrandSelectorState();
 }
 
 class _BrandSelectorState extends State<BrandSelector> {
-
   int currentIndex = 0;
   bool isSelected;
 
   List<Widget> _headsetBrands() {
-    return widget.brands.map((brand){
+    return widget.brands.map((brand) {
       var index = widget.brands.indexOf(brand);
       isSelected = currentIndex == index;
       return Padding(
-        padding: EdgeInsets.only(left: 20,top: 20),
+        padding: EdgeInsets.only(left: 20, top: 20),
         child: GestureDetector(
           onTap: () {
             setState(() {
@@ -29,11 +30,10 @@ class _BrandSelectorState extends State<BrandSelector> {
           child: Text(
             brand,
             style: TextStyle(
-              color: isSelected ? Colors.black : Colors.grey,
-              fontSize: isSelected ? 22 : 16,
-              fontFamily: 'SofiaPro',
-              fontWeight: FontWeight.w500
-            ),
+                color: isSelected ? Colors.black : Colors.grey,
+                fontSize: isSelected ? 22 : 16,
+                fontFamily: 'SofiaPro',
+                fontWeight: FontWeight.w500),
           ),
         ),
       );
