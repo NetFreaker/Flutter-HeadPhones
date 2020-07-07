@@ -16,6 +16,6 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-# Preview of Shopping UI
+# Preview of HeadPhones UI
 
 ![HeadPhones](https://user-images.githubusercontent.com/46986309/86157900-a97dcf00-bb25-11ea-90b8-dc8c881e36db.png)
